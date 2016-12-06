@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FACEF0C1DF70DFF00A7EF74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF0B1DF70DFF00A7EF74 /* AppDelegate.swift */; };
+		3FACEF0E1DF70DFF00A7EF74 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF0D1DF70DFF00A7EF74 /* FirstViewController.swift */; };
+		3FACEF101DF70DFF00A7EF74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF0F1DF70DFF00A7EF74 /* SecondViewController.swift */; };
+		3FACEF131DF70DFF00A7EF74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FACEF111DF70DFF00A7EF74 /* Main.storyboard */; };
+		3FACEF151DF70DFF00A7EF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FACEF141DF70DFF00A7EF74 /* Assets.xcassets */; };
+		3FACEF181DF70DFF00A7EF74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FACEF161DF70DFF00A7EF74 /* LaunchScreen.storyboard */; };
+		3FACEF231DF70DFF00A7EF74 /* Money_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF221DF70DFF00A7EF74 /* Money_TrackerTests.swift */; };
+		3FACEF2E1DF70DFF00A7EF74 /* Money_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF2D1DF70DFF00A7EF74 /* Money_TrackerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FACEF1F1DF70DFF00A7EF74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FACEF001DF70DFE00A7EF74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FACEF071DF70DFE00A7EF74;
+			remoteInfo = "Money Tracker";
+		};
+		3FACEF2A1DF70DFF00A7EF74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FACEF001DF70DFE00A7EF74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FACEF071DF70DFE00A7EF74;
+			remoteInfo = "Money Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FACEF081DF70DFF00A7EF74 /* Money Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FACEF0B1DF70DFF00A7EF74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FACEF0D1DF70DFF00A7EF74 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		3FACEF0F1DF70DFF00A7EF74 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3FACEF121DF70DFF00A7EF74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FACEF141DF70DFF00A7EF74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FACEF171DF70DFF00A7EF74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FACEF191DF70DFF00A7EF74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FACEF1E1DF70DFF00A7EF74 /* Money TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Money TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FACEF221DF70DFF00A7EF74 /* Money_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_TrackerTests.swift; sourceTree = "<group>"; };
+		3FACEF241DF70DFF00A7EF74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FACEF291DF70DFF00A7EF74 /* Money TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Money TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FACEF2D1DF70DFF00A7EF74 /* Money_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_TrackerUITests.swift; sourceTree = "<group>"; };
+		3FACEF2F1DF70DFF00A7EF74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FACEF051DF70DFE00A7EF74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FACEF1B1DF70DFF00A7EF74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FACEF261DF70DFF00A7EF74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FACEEFF1DF70DFE00A7EF74 = {
+			isa = PBXGroup;
+			children = (
+				3FACEF0A1DF70DFF00A7EF74 /* Money Tracker */,
+				3FACEF211DF70DFF00A7EF74 /* Money TrackerTests */,
+				3FACEF2C1DF70DFF00A7EF74 /* Money TrackerUITests */,
+				3FACEF091DF70DFF00A7EF74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FACEF091DF70DFF00A7EF74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FACEF081DF70DFF00A7EF74 /* Money Tracker.app */,
+				3FACEF1E1DF70DFF00A7EF74 /* Money TrackerTests.xctest */,
+				3FACEF291DF70DFF00A7EF74 /* Money TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FACEF0A1DF70DFF00A7EF74 /* Money Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				3FACEF0B1DF70DFF00A7EF74 /* AppDelegate.swift */,
+				3FACEF0D1DF70DFF00A7EF74 /* FirstViewController.swift */,
+				3FACEF0F1DF70DFF00A7EF74 /* SecondViewController.swift */,
+				3FACEF111DF70DFF00A7EF74 /* Main.storyboard */,
+				3FACEF141DF70DFF00A7EF74 /* Assets.xcassets */,
+				3FACEF161DF70DFF00A7EF74 /* LaunchScreen.storyboard */,
+				3FACEF191DF70DFF00A7EF74 /* Info.plist */,
+			);
+			path = "Money Tracker";
+			sourceTree = "<group>";
+		};
+		3FACEF211DF70DFF00A7EF74 /* Money TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FACEF221DF70DFF00A7EF74 /* Money_TrackerTests.swift */,
+				3FACEF241DF70DFF00A7EF74 /* Info.plist */,
+			);
+			path = "Money TrackerTests";
+			sourceTree = "<group>";
+		};
+		3FACEF2C1DF70DFF00A7EF74 /* Money TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FACEF2D1DF70DFF00A7EF74 /* Money_TrackerUITests.swift */,
+				3FACEF2F1DF70DFF00A7EF74 /* Info.plist */,
+			);
+			path = "Money TrackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FACEF071DF70DFE00A7EF74 /* Money Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FACEF321DF70DFF00A7EF74 /* Build configuration list for PBXNativeTarget "Money Tracker" */;
+			buildPhases = (
+				3FACEF041DF70DFE00A7EF74 /* Sources */,
+				3FACEF051DF70DFE00A7EF74 /* Frameworks */,
+				3FACEF061DF70DFE00A7EF74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Money Tracker";
+			productName = "Money Tracker";
+			productReference = 3FACEF081DF70DFF00A7EF74 /* Money Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FACEF1D1DF70DFF00A7EF74 /* Money TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FACEF351DF70DFF00A7EF74 /* Build configuration list for PBXNativeTarget "Money TrackerTests" */;
+			buildPhases = (
+				3FACEF1A1DF70DFF00A7EF74 /* Sources */,
+				3FACEF1B1DF70DFF00A7EF74 /* Frameworks */,
+				3FACEF1C1DF70DFF00A7EF74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FACEF201DF70DFF00A7EF74 /* PBXTargetDependency */,
+			);
+			name = "Money TrackerTests";
+			productName = "Money TrackerTests";
+			productReference = 3FACEF1E1DF70DFF00A7EF74 /* Money TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FACEF281DF70DFF00A7EF74 /* Money TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FACEF381DF70DFF00A7EF74 /* Build configuration list for PBXNativeTarget "Money TrackerUITests" */;
+			buildPhases = (
+				3FACEF251DF70DFF00A7EF74 /* Sources */,
+				3FACEF261DF70DFF00A7EF74 /* Frameworks */,
+				3FACEF271DF70DFF00A7EF74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FACEF2B1DF70DFF00A7EF74 /* PBXTargetDependency */,
+			);
+			name = "Money TrackerUITests";
+			productName = "Money TrackerUITests";
+			productReference = 3FACEF291DF70DFF00A7EF74 /* Money TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FACEF001DF70DFE00A7EF74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = RKrueger;
+				TargetAttributes = {
+					3FACEF071DF70DFE00A7EF74 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = RF3KK2425J;
+						ProvisioningStyle = Automatic;
+					};
+					3FACEF1D1DF70DFF00A7EF74 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = RF3KK2425J;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FACEF071DF70DFE00A7EF74;
+					};
+					3FACEF281DF70DFF00A7EF74 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = RF3KK2425J;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FACEF071DF70DFE00A7EF74;
+					};
+				};
+			};
+			buildConfigurationList = 3FACEF031DF70DFE00A7EF74 /* Build configuration list for PBXProject "Money Tracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FACEEFF1DF70DFE00A7EF74;
+			productRefGroup = 3FACEF091DF70DFF00A7EF74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FACEF071DF70DFE00A7EF74 /* Money Tracker */,
+				3FACEF1D1DF70DFF00A7EF74 /* Money TrackerTests */,
+				3FACEF281DF70DFF00A7EF74 /* Money TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FACEF061DF70DFE00A7EF74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FACEF181DF70DFF00A7EF74 /* LaunchScreen.storyboard in Resources */,
+				3FACEF151DF70DFF00A7EF74 /* Assets.xcassets in Resources */,
+				3FACEF131DF70DFF00A7EF74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FACEF1C1DF70DFF00A7EF74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FACEF271DF70DFF00A7EF74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FACEF041DF70DFE00A7EF74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FACEF101DF70DFF00A7EF74 /* SecondViewController.swift in Sources */,
+				3FACEF0C1DF70DFF00A7EF74 /* AppDelegate.swift in Sources */,
+				3FACEF0E1DF70DFF00A7EF74 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FACEF1A1DF70DFF00A7EF74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FACEF231DF70DFF00A7EF74 /* Money_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FACEF251DF70DFF00A7EF74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FACEF2E1DF70DFF00A7EF74 /* Money_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FACEF201DF70DFF00A7EF74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FACEF071DF70DFE00A7EF74 /* Money Tracker */;
+			targetProxy = 3FACEF1F1DF70DFF00A7EF74 /* PBXContainerItemProxy */;
+		};
+		3FACEF2B1DF70DFF00A7EF74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FACEF071DF70DFE00A7EF74 /* Money Tracker */;
+			targetProxy = 3FACEF2A1DF70DFF00A7EF74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FACEF111DF70DFF00A7EF74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FACEF121DF70DFF00A7EF74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FACEF161DF70DFF00A7EF74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FACEF171DF70DFF00A7EF74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FACEF301DF70DFF00A7EF74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FACEF311DF70DFF00A7EF74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FACEF331DF70DFF00A7EF74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RF3KK2425J;
+				INFOPLIST_FILE = "Money Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Krueger.Money-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3FACEF341DF70DFF00A7EF74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RF3KK2425J;
+				INFOPLIST_FILE = "Money Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Krueger.Money-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3FACEF361DF70DFF00A7EF74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RF3KK2425J;
+				INFOPLIST_FILE = "Money TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Krueger.Money-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Money Tracker.app/Money Tracker";
+			};
+			name = Debug;
+		};
+		3FACEF371DF70DFF00A7EF74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RF3KK2425J;
+				INFOPLIST_FILE = "Money TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Krueger.Money-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Money Tracker.app/Money Tracker";
+			};
+			name = Release;
+		};
+		3FACEF391DF70DFF00A7EF74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RF3KK2425J;
+				INFOPLIST_FILE = "Money TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Krueger.Money-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Money Tracker";
+			};
+			name = Debug;
+		};
+		3FACEF3A1DF70DFF00A7EF74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RF3KK2425J;
+				INFOPLIST_FILE = "Money TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Krueger.Money-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Money Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FACEF031DF70DFE00A7EF74 /* Build configuration list for PBXProject "Money Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FACEF301DF70DFF00A7EF74 /* Debug */,
+				3FACEF311DF70DFF00A7EF74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FACEF321DF70DFF00A7EF74 /* Build configuration list for PBXNativeTarget "Money Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FACEF331DF70DFF00A7EF74 /* Debug */,
+				3FACEF341DF70DFF00A7EF74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FACEF351DF70DFF00A7EF74 /* Build configuration list for PBXNativeTarget "Money TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FACEF361DF70DFF00A7EF74 /* Debug */,
+				3FACEF371DF70DFF00A7EF74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FACEF381DF70DFF00A7EF74 /* Build configuration list for PBXNativeTarget "Money TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FACEF391DF70DFF00A7EF74 /* Debug */,
+				3FACEF3A1DF70DFF00A7EF74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FACEF001DF70DFE00A7EF74 /* Project object */;
+}
