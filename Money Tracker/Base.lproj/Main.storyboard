@@ -20,12 +20,13 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1MN-tp-ZF0">
                                 <items>
-                                    <navigationItem title="Title" id="BTJ-go-dTY">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="HPr-so-K7G">
+                                    <navigationItem title="Money You're Owed" id="BTJ-go-dTY">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="HPr-so-K7G">
                                             <connections>
                                                 <action selector="editButtonTapped:" destination="9pv-A4-QxB" id="dKv-3j-mLX"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="mJi-NN-pMs"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -40,7 +41,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e72-Qq-Wvg" id="x2a-Z0-Vco">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -95,7 +96,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ste-3k-gH9" id="Cry-wD-kFY">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -107,10 +108,15 @@
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0K-0I-4tv">
                                 <items>
-                                    <navigationItem title="Title" id="MJo-yy-ZfR">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="MVa-Uc-eMo">
+                                    <navigationItem title="Pay These People" id="MJo-yy-ZfR">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="MVa-Uc-eMo">
                                             <connections>
                                                 <action selector="editButton:" destination="8rJ-Kc-sve" id="arm-tA-UgD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lCL-LD-WLv">
+                                            <connections>
+                                                <action selector="addButton:" destination="8rJ-Kc-sve" id="73Y-Gf-gUb"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>

@@ -32,7 +32,8 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         return cell
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         return 5
     }
     
@@ -55,7 +56,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
 */
     @IBAction func editButtonTapped(_ sender: UIBarButtonItem)
     {
-        
+        print(editButton.tag)
     }
     
     
