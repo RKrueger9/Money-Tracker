@@ -15,6 +15,7 @@
 		3FACEF181DF70DFF00A7EF74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FACEF161DF70DFF00A7EF74 /* LaunchScreen.storyboard */; };
 		3FACEF231DF70DFF00A7EF74 /* Money_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF221DF70DFF00A7EF74 /* Money_TrackerTests.swift */; };
 		3FACEF2E1DF70DFF00A7EF74 /* Money_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF2D1DF70DFF00A7EF74 /* Money_TrackerUITests.swift */; };
+		3FACEF3C1DF7173300A7EF74 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF3B1DF7173300A7EF74 /* Money.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3FACEF291DF70DFF00A7EF74 /* Money TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Money TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FACEF2D1DF70DFF00A7EF74 /* Money_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_TrackerUITests.swift; sourceTree = "<group>"; };
 		3FACEF2F1DF70DFF00A7EF74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FACEF3B1DF7173300A7EF74 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				3FACEF0D1DF70DFF00A7EF74 /* FirstViewController.swift */,
 				3FACEF0F1DF70DFF00A7EF74 /* SecondViewController.swift */,
 				3FACEF111DF70DFF00A7EF74 /* Main.storyboard */,
+				3FACEF3B1DF7173300A7EF74 /* Money.swift */,
 				3FACEF141DF70DFF00A7EF74 /* Assets.xcassets */,
 				3FACEF161DF70DFF00A7EF74 /* LaunchScreen.storyboard */,
 				3FACEF191DF70DFF00A7EF74 /* Info.plist */,
@@ -267,6 +270,7 @@
 			files = (
 				3FACEF101DF70DFF00A7EF74 /* SecondViewController.swift in Sources */,
 				3FACEF0C1DF70DFF00A7EF74 /* AppDelegate.swift in Sources */,
+				3FACEF3C1DF7173300A7EF74 /* Money.swift in Sources */,
 				3FACEF0E1DF70DFF00A7EF74 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
