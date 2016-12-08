@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F6CD63D1DF9B729008A8664 /* AddPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CD63C1DF9B729008A8664 /* AddPeopleViewController.swift */; };
 		3FACEF0C1DF70DFF00A7EF74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF0B1DF70DFF00A7EF74 /* AppDelegate.swift */; };
 		3FACEF0E1DF70DFF00A7EF74 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF0D1DF70DFF00A7EF74 /* FirstViewController.swift */; };
 		3FACEF101DF70DFF00A7EF74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF0F1DF70DFF00A7EF74 /* SecondViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F6CD63C1DF9B729008A8664 /* AddPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPeopleViewController.swift; sourceTree = "<group>"; };
 		3FACEF081DF70DFF00A7EF74 /* Money Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FACEF0B1DF70DFF00A7EF74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FACEF0D1DF70DFF00A7EF74 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				3FACEF0D1DF70DFF00A7EF74 /* FirstViewController.swift */,
 				3FACEF0F1DF70DFF00A7EF74 /* SecondViewController.swift */,
 				3FACEF111DF70DFF00A7EF74 /* Main.storyboard */,
+				3F6CD63C1DF9B729008A8664 /* AddPeopleViewController.swift */,
 				3FACEF3B1DF7173300A7EF74 /* Money.swift */,
 				3FACEF141DF70DFF00A7EF74 /* Assets.xcassets */,
 				3FACEF161DF70DFF00A7EF74 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6CD63D1DF9B729008A8664 /* AddPeopleViewController.swift in Sources */,
 				3FACEF101DF70DFF00A7EF74 /* SecondViewController.swift in Sources */,
 				3FACEF0C1DF70DFF00A7EF74 /* AppDelegate.swift in Sources */,
 				3FACEF3C1DF7173300A7EF74 /* Money.swift in Sources */,
@@ -522,6 +526,7 @@
 				3FACEF341DF70DFF00A7EF74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FACEF351DF70DFF00A7EF74 /* Build configuration list for PBXNativeTarget "Money TrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +535,7 @@
 				3FACEF371DF70DFF00A7EF74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FACEF381DF70DFF00A7EF74 /* Build configuration list for PBXNativeTarget "Money TrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +544,7 @@
 				3FACEF3A1DF70DFF00A7EF74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

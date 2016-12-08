@@ -26,7 +26,11 @@
                                                 <action selector="editButtonTapped:" destination="9pv-A4-QxB" id="dKv-3j-mLX"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="mJi-NN-pMs"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="mJi-NN-pMs">
+                                            <connections>
+                                                <segue destination="ELT-eF-QK3" kind="presentation" id="8fp-t6-4GQ"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -114,9 +118,10 @@
                                                 <action selector="editButton:" destination="8rJ-Kc-sve" id="arm-tA-UgD"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lCL-LD-WLv">
+                                        <barButtonItem key="rightBarButtonItem" tag="1" systemItem="add" id="lCL-LD-WLv">
                                             <connections>
                                                 <action selector="addButton:" destination="8rJ-Kc-sve" id="73Y-Gf-gUb"/>
+                                                <segue destination="ELT-eF-QK3" kind="presentation" id="lVF-3e-gC8"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -144,6 +149,45 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
+        <!--Add People View Controller-->
+        <scene sceneID="cna-7y-fhs">
+            <objects>
+                <viewController id="inB-ga-Dkx" customClass="AddPeopleViewController" customModule="Money_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8pO-Ok-LMT"/>
+                        <viewControllerLayoutGuide type="bottom" id="xqF-bt-dpR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="stx-N2-in2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXL-ez-gLG">
+                                <frame key="frameInset" minX="129" minY="109" width="116" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xNE-oL-5eF">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="r6C-MF-a3z">
+                            <connections>
+                                <action selector="cancelButton:" destination="inB-ga-Dkx" id="9Xp-Gp-R29"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="CXh-O1-ftS">
+                            <connections>
+                                <action selector="doneButton:" destination="inB-ga-Dkx" id="V1C-f0-qUf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7qY-cg-6nA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3021.5999999999999" y="-0.44977511244377816"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -163,9 +207,30 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JmT-pq-VZ6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ELT-eF-QK3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ssu-Mb-wGx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="inB-ga-Dkx" kind="relationship" relationship="rootViewController" id="iwQ-vc-t6N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Emr-cO-vza" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2172" y="0.0"/>
+        </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8fp-t6-4GQ"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -40,7 +40,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBAction func addButton(_ sender: AnyObject)
     {
-        
+        print(1)
     }
     
     
