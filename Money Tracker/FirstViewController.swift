@@ -11,11 +11,10 @@ import UIKit
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
     
-    
     @IBOutlet weak var owedTableView: UITableView!
     @IBOutlet weak var editButton: UIBarButtonItem!
     
-    var money : Money! = nil
+    var money : Money!
     
     override func viewDidLoad()
     {
@@ -27,8 +26,8 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "owedCell")
         
-        cell.textLabel?.text = .tasks[indexPath.row].name
-        cell.detailTextLabel?.text = taskMgr.tasks[indexPath.row].desc
+        cell.textLabel?.text = money.moneyOwed[indexPath.row].name
+        cell.detailTextLabel?.text = String(money.moneyOwed[indexPath.row].amount)
         
         return cell
     }
