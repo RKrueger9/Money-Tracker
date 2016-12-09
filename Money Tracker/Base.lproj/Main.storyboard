@@ -45,7 +45,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e72-Qq-Wvg" id="x2a-Z0-Vco">
-                                            <frame key="frameInset" width="375" height="44"/>
+                                            <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -100,7 +100,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ste-3k-gH9" id="Cry-wD-kFY">
-                                            <frame key="frameInset" width="375" height="44"/>
+                                            <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -161,15 +161,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXL-ez-gLG">
-                                <frame key="frameInset" minX="129" minY="109" width="116" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C9R-fF-q2B">
+                                <frame key="frameInset" minX="110" minY="138" width="154" height="30"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfK-ed-gaw">
+                                <frame key="frameInset" minX="110" minY="214" width="154" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yfK-ed-gaw" firstAttribute="centerY" secondItem="stx-N2-in2" secondAttribute="centerY" constant="-104.5" id="6jg-p4-V5y"/>
+                            <constraint firstItem="yfK-ed-gaw" firstAttribute="centerX" secondItem="stx-N2-in2" secondAttribute="centerX" id="7hN-97-BC3"/>
+                            <constraint firstItem="C9R-fF-q2B" firstAttribute="centerX" secondItem="stx-N2-in2" secondAttribute="centerX" id="Mef-te-yf4"/>
+                            <constraint firstItem="C9R-fF-q2B" firstAttribute="centerY" secondItem="stx-N2-in2" secondAttribute="centerY" constant="-180.5" id="mYc-ay-V77"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xNE-oL-5eF">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="r6C-MF-a3z">
@@ -183,6 +194,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="amountTextField" destination="yfK-ed-gaw" id="iVw-Nd-b44"/>
+                        <outlet property="nameTextField" destination="C9R-fF-q2B" id="0qy-kC-cgq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qY-cg-6nA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

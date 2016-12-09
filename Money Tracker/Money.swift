@@ -12,7 +12,7 @@ class Money: NSObject
 {
     var name = ""
     var amount = 0
-    
+    var moneyOwed : [Money] = []
     
     
     init(name : String, amount : Int)

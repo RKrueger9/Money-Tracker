@@ -15,26 +15,27 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var owedTableView: UITableView!
     @IBOutlet weak var editButton: UIBarButtonItem!
     
-    var owed : [Money] = []
+    var money : Money! = nil
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        owedTableView.reloadData()
         editButton.tag = 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "owedCell")
         
-        //cell.textLabel?.text = taskMgr.tasks[indexPath.row].name
-        //cell.detailTextLabel?.text = taskMgr.tasks[indexPath.row].desc
+        cell.textLabel?.text = .tasks[indexPath.row].name
+        cell.detailTextLabel?.text = taskMgr.tasks[indexPath.row].desc
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 5
+        return money.moneyOwed.count
     }
     
     /*
