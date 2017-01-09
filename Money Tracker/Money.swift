@@ -7,17 +7,31 @@
 //
 
 import UIKit
+import CoreData
 
-class Money: NSObject
+class Money: NSObject, NSCoding
 {
     var name = ""
-    var amount = 0
-    var moneyOwed : [Money] = []
+    var amount = ""
     
-    
-    init(name : String, amount : Int)
+    init(name : String, amount : String)
     {
         self.name = name
         self.amount = amount
     }
+    
+    //initilizer is used for loading object of class
+    required init?(coder aDecoder: NSCoder)
+    {
+        name = aDecoder.decodeObject(forKey: "name") as! String
+        amount = aDecoder.decodeObject(forKey: "amount") as! String
+    }
+    
+    //used for saving
+    func encode(with aCoder: NSCoder)
+    {
+        aCoder.encode(name,forKey: "name")
+        aCoder.encode(amount,forKey: "amount")
+        
+    }    
 }

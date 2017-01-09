@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F6CD63D1DF9B729008A8664 /* AddPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CD63C1DF9B729008A8664 /* AddPeopleViewController.swift */; };
+		3F1C76541E09251B00E6E7EB /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C76521E09251B00E6E7EB /* Model.xcdatamodeld */; };
 		3FACEF0C1DF70DFF00A7EF74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF0B1DF70DFF00A7EF74 /* AppDelegate.swift */; };
 		3FACEF0E1DF70DFF00A7EF74 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF0D1DF70DFF00A7EF74 /* FirstViewController.swift */; };
-		3FACEF101DF70DFF00A7EF74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACEF0F1DF70DFF00A7EF74 /* SecondViewController.swift */; };
 		3FACEF131DF70DFF00A7EF74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FACEF111DF70DFF00A7EF74 /* Main.storyboard */; };
 		3FACEF151DF70DFF00A7EF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FACEF141DF70DFF00A7EF74 /* Assets.xcassets */; };
 		3FACEF181DF70DFF00A7EF74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FACEF161DF70DFF00A7EF74 /* LaunchScreen.storyboard */; };
@@ -37,11 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F6CD63C1DF9B729008A8664 /* AddPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPeopleViewController.swift; sourceTree = "<group>"; };
+		3F1C76531E09251B00E6E7EB /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		3FACEF081DF70DFF00A7EF74 /* Money Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FACEF0B1DF70DFF00A7EF74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FACEF0D1DF70DFF00A7EF74 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		3FACEF0F1DF70DFF00A7EF74 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3FACEF121DF70DFF00A7EF74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FACEF141DF70DFF00A7EF74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FACEF171DF70DFF00A7EF74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,13 +103,12 @@
 			children = (
 				3FACEF0B1DF70DFF00A7EF74 /* AppDelegate.swift */,
 				3FACEF0D1DF70DFF00A7EF74 /* FirstViewController.swift */,
-				3FACEF0F1DF70DFF00A7EF74 /* SecondViewController.swift */,
-				3F6CD63C1DF9B729008A8664 /* AddPeopleViewController.swift */,
 				3FACEF111DF70DFF00A7EF74 /* Main.storyboard */,
 				3FACEF3B1DF7173300A7EF74 /* Money.swift */,
 				3FACEF141DF70DFF00A7EF74 /* Assets.xcassets */,
 				3FACEF161DF70DFF00A7EF74 /* LaunchScreen.storyboard */,
 				3FACEF191DF70DFF00A7EF74 /* Info.plist */,
+				3F1C76521E09251B00E6E7EB /* Model.xcdatamodeld */,
 			);
 			path = "Money Tracker";
 			sourceTree = "<group>";
@@ -271,11 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F6CD63D1DF9B729008A8664 /* AddPeopleViewController.swift in Sources */,
-				3FACEF101DF70DFF00A7EF74 /* SecondViewController.swift in Sources */,
 				3FACEF0C1DF70DFF00A7EF74 /* AppDelegate.swift in Sources */,
 				3FACEF3C1DF7173300A7EF74 /* Money.swift in Sources */,
 				3FACEF0E1DF70DFF00A7EF74 /* FirstViewController.swift in Sources */,
+				3F1C76541E09251B00E6E7EB /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +543,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F1C76521E09251B00E6E7EB /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F1C76531E09251B00E6E7EB /* Model.xcdatamodel */,
+			);
+			currentVersion = 3F1C76531E09251B00E6E7EB /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3FACEF001DF70DFE00A7EF74 /* Project object */;
 }

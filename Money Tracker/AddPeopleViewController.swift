@@ -13,14 +13,11 @@ class AddPeopleViewController: UIViewController
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var amountTextField: UITextField!
     
-    let money : Money! = nil
-    
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
     }
+    
     
     @IBAction func cancelButton(_ sender: UIBarButtonItem)
     {
@@ -28,15 +25,16 @@ class AddPeopleViewController: UIViewController
     
     @IBAction func doneButton(_ sender: AnyObject)
     {
-        money.moneyOwed.append(Money(name : nameTextField.text!, amount : Int(amountTextField.text!)!))
-        dismiss(animated: true, completion: nil)  
+        if(nameTextField.text! == "" && amountTextField.text! == "")
+        {
+            
+        }
+        else
+        {
+            moneyMgr.addPerson(name: nameTextField.text!, amount: Double(amountTextField.text!)!)
+            dismiss(animated: true, completion:{})
+        }
     }
-    
-    
-    
-    
-    
-    
     
     
     

@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YUU-8K-We7">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Start-->
+        <scene sceneID="GEY-VO-F4q">
+            <objects>
+                <viewController title="Start" id="YUU-8K-We7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="faZ-hY-loD"/>
+                        <viewControllerLayoutGuide type="bottom" id="z7f-B1-9bo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rrS-l7-SeU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money" translatesAutoresizingMaskIntoConstraints="NO" id="gHJ-je-UIu"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0j-JG-Zj4">
+                                <frame key="frameInset" minX="87" minY="311" width="201" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Access Ledger">
+                                    <color key="titleColor" red="1" green="0.89270978739999995" blue="0.036827430110000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9pv-A4-QxB" kind="show" id="UFw-BG-nt9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Money Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuw-AX-IO0">
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="1" green="0.89270978739999995" blue="0.036827430110000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z7f-B1-9bo" firstAttribute="top" secondItem="gHJ-je-UIu" secondAttribute="bottom" id="1N1-CW-0ka"/>
+                            <constraint firstItem="tuw-AX-IO0" firstAttribute="centerY" secondItem="rrS-l7-SeU" secondAttribute="centerY" constant="-249" id="ZuU-4z-mQi"/>
+                            <constraint firstItem="gHJ-je-UIu" firstAttribute="top" secondItem="rrS-l7-SeU" secondAttribute="top" id="bY8-Yr-na4"/>
+                            <constraint firstItem="g0j-JG-Zj4" firstAttribute="centerX" secondItem="rrS-l7-SeU" secondAttribute="centerX" id="bbZ-8L-aZq"/>
+                            <constraint firstAttribute="trailing" secondItem="gHJ-je-UIu" secondAttribute="trailing" id="ewK-Fw-0VM"/>
+                            <constraint firstItem="tuw-AX-IO0" firstAttribute="centerX" secondItem="rrS-l7-SeU" secondAttribute="centerX" id="ppN-QP-8Vs"/>
+                            <constraint firstItem="g0j-JG-Zj4" firstAttribute="centerY" secondItem="rrS-l7-SeU" secondAttribute="centerY" id="tFr-GX-8Wq"/>
+                            <constraint firstItem="gHJ-je-UIu" firstAttribute="leading" secondItem="rrS-l7-SeU" secondAttribute="leading" id="xL1-I7-J4S"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x2b-VX-nT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.399999999999999" y="-54.422788605697157"/>
+        </scene>
         <!--Money Owed-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -28,7 +74,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="mJi-NN-pMs">
                                             <connections>
-                                                <segue destination="ELT-eF-QK3" kind="presentation" id="8fp-t6-4GQ"/>
+                                                <action selector="addButtonOnTap:" destination="9pv-A4-QxB" id="fMZ-Yr-NUn"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -36,10 +82,6 @@
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gQ9-JD-C5J">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="574" id="0mK-tM-rwa"/>
-                                    <constraint firstAttribute="width" constant="375" id="KrL-iz-Nsd"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="owedCell" id="e72-Qq-Wvg">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -75,177 +117,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
-        </scene>
-        <!--Money You Owe-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Money_Tracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kcN-dC-on8">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="6tR-Wa-kGl"/>
-                                    <constraint firstAttribute="height" constant="574" id="LIw-aS-uNe"/>
-                                </constraints>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="oweCell" id="ste-3k-gH9">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ste-3k-gH9" id="Cry-wD-kFY">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="2FE-Nh-2tc"/>
-                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="4Cy-Ss-5kL"/>
-                                </connections>
-                            </tableView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0K-0I-4tv">
-                                <items>
-                                    <navigationItem title="Pay These People" id="MJo-yy-ZfR">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="MVa-Uc-eMo">
-                                            <connections>
-                                                <action selector="editButton:" destination="8rJ-Kc-sve" id="arm-tA-UgD"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" tag="1" systemItem="add" id="lCL-LD-WLv">
-                                            <connections>
-                                                <action selector="addButton:" destination="8rJ-Kc-sve" id="73Y-Gf-gUb"/>
-                                                <segue destination="ELT-eF-QK3" kind="presentation" id="lVF-3e-gC8"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="kcN-dC-on8" secondAttribute="bottom" id="1v1-b8-kQs"/>
-                            <constraint firstItem="kcN-dC-on8" firstAttribute="top" secondItem="a0K-0I-4tv" secondAttribute="bottom" id="2aI-tQ-zoo"/>
-                            <constraint firstItem="a0K-0I-4tv" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="4QH-dB-vh2"/>
-                            <constraint firstAttribute="trailing" secondItem="kcN-dC-on8" secondAttribute="trailing" id="QQL-be-YQ0"/>
-                            <constraint firstItem="a0K-0I-4tv" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="SsK-KO-Ec4"/>
-                            <constraint firstItem="kcN-dC-on8" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="iYW-zs-tx3"/>
-                            <constraint firstAttribute="trailing" secondItem="a0K-0I-4tv" secondAttribute="trailing" id="q3T-Ve-obv"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Money You Owe" image="second" id="cPa-gy-q4n"/>
-                    <connections>
-                        <outlet property="editButton" destination="MVa-Uc-eMo" id="giU-Nq-hNN"/>
-                        <outlet property="oweTableView" destination="kcN-dC-on8" id="77x-yI-Kub"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
-        </scene>
-        <!--Add People View Controller-->
-        <scene sceneID="cna-7y-fhs">
-            <objects>
-                <viewController id="inB-ga-Dkx" customClass="AddPeopleViewController" customModule="Money_Tracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8pO-Ok-LMT"/>
-                        <viewControllerLayoutGuide type="bottom" id="xqF-bt-dpR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="stx-N2-in2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C9R-fF-q2B">
-                                <frame key="frameInset" minX="110" minY="138" width="154" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfK-ed-gaw">
-                                <frame key="frameInset" minX="110" minY="214" width="154" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="yfK-ed-gaw" firstAttribute="centerY" secondItem="stx-N2-in2" secondAttribute="centerY" constant="-104.5" id="6jg-p4-V5y"/>
-                            <constraint firstItem="yfK-ed-gaw" firstAttribute="centerX" secondItem="stx-N2-in2" secondAttribute="centerX" id="7hN-97-BC3"/>
-                            <constraint firstItem="C9R-fF-q2B" firstAttribute="centerX" secondItem="stx-N2-in2" secondAttribute="centerX" id="Mef-te-yf4"/>
-                            <constraint firstItem="C9R-fF-q2B" firstAttribute="centerY" secondItem="stx-N2-in2" secondAttribute="centerY" constant="-180.5" id="mYc-ay-V77"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="xNE-oL-5eF">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="r6C-MF-a3z">
-                            <connections>
-                                <action selector="cancelButton:" destination="inB-ga-Dkx" id="9Xp-Gp-R29"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="CXh-O1-ftS">
-                            <connections>
-                                <action selector="doneButton:" destination="inB-ga-Dkx" id="V1C-f0-qUf"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="amountTextField" destination="yfK-ed-gaw" id="iVw-Nd-b44"/>
-                        <outlet property="nameTextField" destination="C9R-fF-q2B" id="0qy-kC-cgq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7qY-cg-6nA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3021.5999999999999" y="-0.44977511244377816"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="yl2-sM-qoP">
-            <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
-                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="JmT-pq-VZ6">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ELT-eF-QK3" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ssu-Mb-wGx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="inB-ga-Dkx" kind="relationship" relationship="rootViewController" id="iwQ-vc-t6N"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Emr-cO-vza" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2172" y="0.0"/>
+            <point key="canvasLocation" x="964" y="-54.422788605697157"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="money" width="259" height="194"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="8fp-t6-4GQ"/>
-    </inferredMetricsTieBreakers>
 </document>
